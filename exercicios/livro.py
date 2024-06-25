@@ -20,6 +20,6 @@ class Livro:
     
     @classmethod
     def exibir_livros(cls):
-        print(f'{'Titulo'.center(20)} | {'Autor'.center(20)} | {'Ano'.center(20)} | {'Disponibilidade'.center(20)}')
+        print(f'{'Titulo'.center(20)} | {'Autor'.center(30)} | {'Ano'.center(20)} | {'Disponibilidade'.center(20)}')
         for livro in cls.livros:
-            print(f'{livro._titulo.ljust(20)} | {livro._autor.ljust(20)} | {livro._ano.ljust(20)} | {livro.muda_disponivel}')
+            print(f'{livro._titulo.ljust(20)} | {livro._autor.ljust(30)} | {livro._ano.ljust(20)} | {livro.muda_disponivel}')
